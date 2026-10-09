@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Armansyah Setiawan | Website Profil</title>
+
+  <!-- Bootstrap: mengatur tampilan dan layout siap pakai -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS buatan sendiri tetap digunakan untuk ciri khas website -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container py-3">
+      <h1 class="h2 fw-bold mb-3">Armansyah Setiawan</h1>
+
+      <!-- Navbar Bootstrap responsif -->
+      <nav class="navbar navbar-expand-md navbar-light profile-navbar rounded">
+        <div class="container-fluid">
+          <a class="navbar-brand d-md-none fw-semibold" href="#">Menu</a>
+
+          <!-- Tombol ini muncul pada layar kecil -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menuProfil" aria-controls="menuProfil"
+            aria-expanded="false" aria-label="Buka navigasi">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Link navigasi -->
+          <div class="collapse navbar-collapse" id="menuProfil">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#tentang">Tentang</a>
+              <a class="nav-link" href="#jadwal">Jadwal</a>
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <!-- TENTANG SAYA -->
+    <section id="tentang" class="mb-5">
+      <h2 class="section-title">Tentang Saya</h2>
+
+      <!-- row dan col membuat layout responsif -->
+      <div class="row g-4 align-items-start">
+        <div class="col-12 col-md-auto">
+          <!-- Nama file disesuaikan dengan file foto di folder proyek -->
+          <img src="potoprofil.jpg.JPG" alt="Foto Armansyah Setiawan"
+            class="foto-profil img-thumbnail">
+        </div>
+
+        <div class="col-12 col-md">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p>
+                Halo, nama saya <strong>Armansyah Setiawan</strong>. Saya adalah
+                mahasiswa Rekayasa Perangkat Lunak yang masih aktif berkuliah di Telkom University.
+              </p>
+
+              <h3 class="h5 text-danger">Hobi</h3>
+              <ul class="mb-0">
+                <li>Bermain game</li>
+                <li>Olahraga</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JADWAL KULIAH -->
+    <section id="jadwal" class="mb-5">
+      <h2 class="section-title">Jadwal Kuliah</h2>
+
+      <!-- table-responsive membuat tabel bisa digeser pada layar kecil -->
+      <div id="tabelJadwal" class="table-responsive">
+        <table class="table table-striped table-hover table-bordered align-middle">
+          <thead class="table-primary">
+            <tr>
+              <th scope="col">Hari</th>
+              <th scope="col">Mata Kuliah</th>
+              <th scope="col">Jam</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Senin</td>
+              <td>Pemrograman Web</td>
+              <td>08.00</td>
+            </tr>
+            <tr>
+              <td>Selasa</td>
+              <td>Basis Data</td>
+              <td>10.00</td>
+            </tr>
+            <tr>
+              <td>Rabu</td>
+              <td>Rekayasa Perangkat Lunak</td>
+              <td>08.00</td>
+            </tr>
+            <tr>
+              <td>Kamis</td>
+              <td>Analisis dan Perancangan Sistem</td>
+              <td>13.00</td>
+            </tr>
+            <tr>
+              <td>Jumat</td>
+              <td>Pemrograman Web Lanjutan</td>
+              <td>10.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button id="tombolJadwal" type="button" class="btn btn-dark mt-2">
+        Sembunyikan Jadwal
+      </button>
+    </section>
+
+    <!-- MEDIA SOSIAL -->
+    <section class="link-section mb-5">
+      <h2 class="section-title">Media Sosial</h2>
+      <p>Kunjungi profil saya:</p>
+      <a class="btn btn-outline-danger me-2" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="btn btn-outline-primary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </section>
+
+    <!-- FORM KONTAK -->
+    <section id="kontak" class="mb-5">
+      <h2 class="section-title">Kontak Saya</h2>
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <form id="formKontak">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama"
+                placeholder="Masukkan nama" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email"
+                placeholder="Masukkan email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" name="pesan" rows="5"
+                placeholder="Tulis pesan..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-danger">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3">
+    <p class="mb-0">&copy; 2026 Armansyah Setiawan</p>
+  </footer>
+
+  <!-- Bootstrap JavaScript untuk tombol menu mobile -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript asli untuk tombol tampil/sembunyikan jadwal -->
+  <script src="script.js"></script>
+</body>
+</html>
