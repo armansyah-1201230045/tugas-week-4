@@ -1,56 +1,97 @@
-# Web Profil - Bootstrap
+# Web Profil week 4— Bootstrap 5
 
-## Deskripsi
-Website profil mahasiswa Armansyah Setiawan yang menggunakan HTML, Bootstrap 5, CSS tambahan, dan JavaScript sederhana.
+## 1. Deskripsi Proyek
 
-## Fitur
-- Navigasi responsif dengan Bootstrap Navbar.
-- Bagian profil dan hobi.
-- Tabel jadwal kuliah yang responsif.
-- Tombol untuk menyembunyikan dan menampilkan jadwal.
-- Link media sosial.
-- Form kontak dengan validasi browser.
+Web Profil Mahasiswa adalah aplikasi website sederhana yang dibuat untuk menampilkan informasi pribadi mahasiswa dalam bentuk halaman web yang terstruktur dan responsif.
 
-## Teknologi
-- HTML
-- Bootstrap 5.3.3 melalui CDN
-- CSS
-- JavaScript
+Proyek ini dikembangkan menggunakan HTML sebagai struktur halaman, CSS untuk pengaturan tampilan, JavaScript untuk interaksi sederhana, dan Bootstrap 5 untuk membantu pembuatan layout serta komponen antarmuka.
 
-## Bootstrap yang digunakan
-Bootstrap ditambahkan di `index.html` melalui stylesheet CDN pada bagian `<head>`:
+Website ini merupakan bagian dari tugas perkuliahan pengembangan web dan bertujuan untuk menerapkan penggunaan framework CSS Bootstrap pada website yang sudah dibuat.
 
-```html
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+## 2. Tujuan Proyek
+
+Tujuan pengembangan website ini adalah:
+
+- Menampilkan informasi profil mahasiswa secara terstruktur.
+- Menerapkan penggunaan Bootstrap 5 untuk mempercepat pengembangan antarmuka.
+- Menggunakan sistem grid Bootstrap untuk mengatur layout halaman.
+- Membuat tabel jadwal kuliah yang mudah dibaca.
+- Menyediakan bagian hobi, media sosial, dan form kontak.
+- Menerapkan desain responsif agar website dapat diakses melalui desktop maupun perangkat mobile.
+
+## 3. Fitur Website
+
+### 3.1 Profil Mahasiswa
+Menampilkan foto dan informasi singkat mengenai mahasiswa.
+
+### 3.2 Informasi Hobi
+Menyediakan bagian untuk menampilkan hobi atau aktivitas yang diminati.
+
+### 3.3 Jadwal Kuliah
+Menampilkan jadwal perkuliahan dalam bentuk tabel agar informasi hari, mata kuliah, dan waktu lebih mudah dibaca.
+
+### 3.4 Media Sosial
+Menyediakan bagian yang berkaitan dengan akun atau tautan media sosial mahasiswa.
+
+### 3.5 Form Kontak
+Menyediakan form untuk memasukkan informasi kontak atau pesan.
+
+### 3.6 Tampilan Responsif
+Menggunakan fitur layout Bootstrap agar elemen halaman dapat menyesuaikan ukuran layar desktop dan mobile.
+
+## 4. Teknologi yang Digunakan
+
+| Teknologi | Fungsi |
+|---|---|
+| HTML5 | Membentuk struktur halaman website. |
+| CSS3 | Mengatur warna, ukuran, jarak, dan desain khusus. |
+| JavaScript | Menangani interaksi sederhana pada halaman. |
+| Bootstrap 5 | Membantu pembuatan layout responsif dan komponen antarmuka. |
+| Bootstrap Icons | Menampilkan ikon pada bagian antarmuka jika digunakan. |
+| Git | Mengelola versi kode proyek. |
+| GitHub | Menyimpan dan membagikan source code proyek. |
+
+Bootstrap dimuat melalui CDN sehingga instalasi paket tambahan tidak diperlukan untuk menjalankan website ini. Koneksi internet diperlukan agar file Bootstrap dapat dimuat.
+
+## 5. Struktur Folder
+
+```text
+web-profil-week3-bootstrap/
+├── index.html
+├── style.css
+├── script.js
+├── potoprofil.jpg.JPG
+└── README.md
 ```
 
-Bootstrap JavaScript bundle juga dimuat sebelum `script.js` agar komponen interaktif Bootstrap dapat digunakan:
+Keterangan:
 
-```html
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-```
+- `index.html`: halaman utama yang berisi struktur website dan komponen Bootstrap.
+- `style.css`: mengatur desain tambahan, seperti warna, ukuran elemen, dan tampilan khusus.
+- `script.js`: menangani interaksi JavaScript yang diterapkan pada website.
+- `potoprofil.jpg.JPG`: file foto profil yang digunakan pada halaman.
+- `README.md`: dokumentasi proyek dan petunjuk penggunaan.
 
-Class Bootstrap yang digunakan pada halaman ini antara lain:
-- **Grid dan container** (`container`, `row`, `col-12`, `col-md-auto`, `col-md`) untuk mengatur tata letak profil yang responsif.
-- **Navbar dan collapse** (`navbar`, `navbar-expand-md`, `navbar-toggler`, `collapse`) untuk navigasi yang dapat dibuka pada layar kecil.
-- **Card dan shadow** (`card`, `card-body`, `shadow-sm`) untuk membungkus informasi profil dan form kontak.
-- **Table** (`table`, `table-striped`, `table-hover`, `table-bordered`, `table-responsive`) untuk menampilkan jadwal kuliah dan membuat tabel dapat digulir pada layar sempit.
-- **Form** (`form-label`, `form-control`) untuk merapikan kolom kontak.
-- **Button dan utility** (`btn`, `btn-danger`, `text-center`, `py-3`, `mb-5`, dan lainnya) untuk tampilan tombol, warna, jarak, dan perataan.
+## 6. Cara Menjalankan Proyek
 
-Bootstrap mengatur komponen dan layout dasar; `style.css` tetap digunakan untuk gaya khusus website. Fungsi tampil/sembunyikan jadwal tetap ditangani oleh `script.js`.
+1. Clone repository atau unduh source code proyek.
+2. Buka folder proyek menggunakan Visual Studio Code.
+3. Pastikan seluruh file proyek berada dalam folder yang sama sesuai struktur di atas.
+4. Buka file `index.html` menggunakan browser.
+5. Alternatifnya, gunakan ekstensi Live Server di Visual Studio Code untuk menjalankan halaman melalui server lokal.
+6. Pastikan koneksi internet aktif agar Bootstrap CDN dapat dimuat.
 
-## Cara menjalankan
-1. Download atau clone repository ini.
-2. Buka folder proyek.
-3. Buka `index.html` di browser atau gunakan ekstensi Live Server di VS Code.
-4. Pastikan koneksi internet aktif agar file CSS dan JavaScript Bootstrap dapat dimuat dari CDN.
+## 7. Penerapan Bootstrap 5
 
-## Struktur file
-- `index.html`: struktur halaman dan class Bootstrap.
-- `style.css`: CSS tambahan untuk warna dan ukuran khusus.
-- `script.js`: fungsi tombol tampil/sembunyikan jadwal.
-- `potoprofil.jpg.JPG`: foto profil.
+Bootstrap digunakan untuk membantu pengaturan layout dan komponen website.
 
-## Catatan
-Proyek ini menggunakan HTML dan JavaScript biasa, bukan React. Bootstrap membantu layout dan tampilan responsif tanpa perlu mengubah proyek menjadi aplikasi React.
+Beberapa kelas Bootstrap yang dapat digunakan dalam proyek ini meliputi:
+
+- `container` untuk mengatur area konten.
+- `row` dan `col` untuk menyusun layout menggunakan sistem grid.
+- `card` untuk menyusun informasi dalam bentuk kartu.
+- `table` untuk menampilkan jadwal kuliah.
+- `btn` untuk membuat tombol.
+- `form-control` untuk mengatur tampilan input form.
+- `table-responsive` untuk menjaga tabel tetap dapat digunakan pada layar kecil.
+
